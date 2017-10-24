@@ -36,4 +36,7 @@ function updateWeather(weatherData) {
     ELEMENTS.ELEMENT_WEATHER_CITY.textContent = weatherData.cityName;
     ELEMENTS.ELEMENT_WEATHER_DESCRIPTION.textContent = weatherData.description;
     ELEMENTS.ELEMENT_WEATHER_TEMPERATURE.textContent = weatherData.temperature;
+
+    ELEMENTS.ELEMENT_LOADING_TEXT.style.display = 'none'; // waiting for displaying until the data comes
+    ELEMENTS.ELEMENT_WEATHER_BOX.style.display = 'block';
 }
